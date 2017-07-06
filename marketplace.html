@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Online Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please use this form to order your item(s).</h1>
+      <div>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="person">Your Name:</label>
+            <input id="person" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <p>Your shipping address</p>
+            <label for="number">Street address</label>
+            <input id="number" class="form-control" type="text">
+            <label for="citystate">City and State</label>
+            <input id="citystate" class="form-control" type="text">
+            <label for="zipcode">Zipcode</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="item">What item would you like?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="clothing" value="shirt">
+                Shirt
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="clothing" value="coat">
+                Coat
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="clothing" value="pants">
+                Pants
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="clothing" value="shoes">
+                Shoes
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">How many?</label>
+            <select class="form-control" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="color">How color?</label>
+            <select class="form-control" id="color">
+              <option>black</option>
+              <option>white</option>
+              <option>brown</option>
+              <option>blue</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="size">How color?</label>
+            <select class="form-control" id="size">
+              <option>xs</option>
+              <option>s</option>
+              <option>md</option>
+              <option>lg</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+
+      <div>
+        <p>Thank you for your purchase.  Here is your receipt:
+          <span id="name"></span>
+          <span id="address1"></span>
+          <span id="address2"></span>
+          <span id="address3"></span>
+        <p>You ordered the following item:</p>
+          <span id="item"></span>
+          <span id="quantity"></span>
+          <div class="result">
+          </div>
+
+      </div>
+    </div>
+  </body>
+</html>
